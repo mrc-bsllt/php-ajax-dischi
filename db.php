@@ -55,6 +55,6 @@
       "author" => "Il Teatro degli Orrori",
       "cover" => "itdo_freddo.jpg",
       "year_pubblication" => 2009
-    ]
+    ],
   ];
 ?>

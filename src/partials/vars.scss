@@ -3,5 +3,6 @@ $blackBrandColor: #121212;
 $lightBlackBrandColor: #212121;
 $greyBrandColor: #535353;
 $lightGreyBrandColor: #b3b3b3;
-$marginTB: 20px;
+$lateralMargin: 30px;
+$mainMarginBlock: 20px #{calc($lateralMargin / 2)};
 $standardSectionPad: #{calc(100px - #{$marginTB})} 0;

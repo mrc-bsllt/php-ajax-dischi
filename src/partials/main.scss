@@ -2,10 +2,10 @@ main {
   padding: $standardSectionPad;
   background-color: $lightBlackBrandColor;
   .wrapper {
-    @include flexSet(row, space-between, stretch);
+    @include flexSet(row, flex-start, stretch);
     .disc-container {
-      width: calc(100% / 3 - 30px);
-      margin: $marginTB 0;
+      width: calc(100% / 3 - $lateralMargin);
+      margin: $mainMarginBlock
       padding: 20px 20px 50px;
       background-color: $blackBrandColor;
       img {

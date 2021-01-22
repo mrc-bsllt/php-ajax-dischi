@@ -3,3 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.wrapper {
+  width: 60%;
+  margin: auto;
+}
+
+header {
+  height: 50px;
+  background-color: black;
+  color: white;
+}

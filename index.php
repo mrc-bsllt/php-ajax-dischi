@@ -7,6 +7,10 @@
     <title>php ajax dischi</title>
   </head>
   <body>
-    <h1>Ciao</h1>
+
+    <!-- header -->
+    <?php include __DIR__."/template/header.php" ?>
+    <!-- header -->
+    
   </body>
 </html>

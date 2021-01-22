@@ -1,13 +1,27 @@
 main {
   padding: $standardSectionPad;
-  background-color: $darkGreyBrandColor;
+  background-color: $lightBlackBrandColor;
   .wrapper {
     @include flexSet(row, space-between, stretch);
     .disc-container {
       width: calc(100% / 3 - 30px);
-      height: 300px;
       margin: $marginTB 0;
+      padding: 20px 20px 50px;
       background-color: $blackBrandColor;
+      img {
+        width: 100%;
+      }
+      .text {
+        margin-top: 10px;
+        text-align: center;
+        h3 {
+          margin-bottom: 15px;
+        }
+        span {
+          display: inline-block;
+          color: $lightGreyBrandColor;
+        }
+      }
     }
   } //wrapper
 } //main

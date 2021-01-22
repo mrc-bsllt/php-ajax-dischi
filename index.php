@@ -16,5 +16,14 @@
     <?php include __DIR__."/template/header.php" ?>
     <!-- header -->
 
+    <!-- main -->
+    <main>
+
+    </main>
+    <!-- /main -->
+
+    <!-- footer -->
+    <?php include __DIR__."/template/footer.php" ?>
+    <!-- /footer -->
   </body>
 </html>

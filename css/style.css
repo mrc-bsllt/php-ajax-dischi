@@ -25,3 +25,13 @@ header .wrapper a img {
   width: 50px;
   vertical-align: middle;
 }
+
+main {
+  height: 800px;
+  padding: 50px 0;
+}
+
+footer {
+  height: 50px;
+  background-color: #121212;
+}

@@ -20,6 +20,9 @@
     <!-- main -->
     <main>
       <div class="wrapper">
+        <?php foreach ($database as $discContaier) { ?>
+          <div class="disc-container"></div>
+        <?php } ?>
       </div>
     </main>
     <!-- /main -->

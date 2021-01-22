@@ -1,3 +1,5 @@
-$containerWidth: 60%;
+$containerWidth: 50%;
 $blackBrandColor: #121212;
 $darkGreyBrandColor: #212121;
+$marginTB: 20px;
+$standardSectionPad: #{calc(100px - #{$marginTB})} 0;

@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-  width: 60%;
+  width: 50%;
   margin: auto;
 }
 
@@ -27,9 +27,21 @@ header .wrapper a img {
 }
 
 main {
-  height: 800px;
-  padding: 50px 0;
+  padding: calc(100px - 20px) 0;
   background-color: #212121;
+}
+main .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+main .wrapper .disc-container {
+  width: calc(100% / 3 - 30px);
+  height: 300px;
+  margin: 20px 0;
+  background-color: #121212;
 }
 
 footer {

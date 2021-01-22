@@ -1,5 +1,13 @@
 main {
-  height: 800px;
-  padding: 50px 0;
+  padding: $standardSectionPad;
   background-color: $darkGreyBrandColor;
-}
+  .wrapper {
+    @include flexSet(row, space-between, stretch);
+    .disc-container {
+      width: calc(100% / 3 - 30px);
+      height: 300px;
+      margin: $marginTB 0;
+      background-color: $blackBrandColor;
+    }
+  } //wrapper
+} //main

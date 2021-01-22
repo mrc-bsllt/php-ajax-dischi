@@ -23,7 +23,7 @@
     <!-- main -->
     <main>
       <div class="wrapper">
-        <?php foreach ($database as $index => $discContaier) { ?>
+        <?php foreach ($database as $discContaier) { ?>
 
           <div class="disc-container">
             <img src="img/<?= $discContaier["cover"]; ?>" alt="<?= $discContaier["title"]; ?>">

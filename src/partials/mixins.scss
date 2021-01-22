@@ -1,0 +1,7 @@
+@mixin flexSet($dir, $jC, $aI) {
+  display: flex;
+  flex-direction: #{$dir};
+  justify-content: #{$jC};
+  align-items: #{$aI};
+  flex-wrap: wrap;
+}

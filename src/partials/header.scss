@@ -1,5 +1,14 @@
 header {
-  height: 50px;
-  background-color: black;
-  color: white;
-}
+  height: 70px;
+  background-color: $blackBrandColor;
+  .wrapper {
+    height: 100%;
+    @include flexSet(row, flex-start, center);
+    a {
+      img {
+        width: 50px;
+        vertical-align: middle;
+      }
+    } //a
+  } //wrapper
+} //header

@@ -1,3 +1,7 @@
+<?php
+  include __DIR__."/vars.php"
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -11,6 +15,6 @@
     <!-- header -->
     <?php include __DIR__."/template/header.php" ?>
     <!-- header -->
-    
+
   </body>
 </html>

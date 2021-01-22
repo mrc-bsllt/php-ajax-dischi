@@ -1,5 +1,6 @@
 <?php
-  include __DIR__."/vars.php"
+  include __DIR__."/vars.php";
+  include __DIR__."/db.php"
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +19,8 @@
 
     <!-- main -->
     <main>
-
+      <div class="wrapper">
+      </div>
     </main>
     <!-- /main -->
 

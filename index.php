@@ -28,7 +28,9 @@
           <div class="disc-container">
             <img src="img/<?= $discContaier["cover"]; ?>" alt="<?= $discContaier["title"]; ?>">
             <div class="text">
-              <h3><?= $discContaier["title"]; ?></h3>
+              <a href="#">
+                <h3><?= $discContaier["title"]; ?></h3>
+              </a>
               <a href="#">
                 <h4><?= $discContaier["author"]; ?></h4>
               </a>

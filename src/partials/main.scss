@@ -4,8 +4,8 @@ main {
   .wrapper {
     @include flexSet(row, flex-start, stretch);
     .disc-container {
-      width: calc(100% / 3 - $lateralMargin);
-      margin: $mainMarginBlock
+      width: calc(100% / 3 - #{$lateralMargin});
+      margin: $mainMarginBlock;
       padding: 20px 20px 50px;
       background-color: $blackBrandColor;
       img {
@@ -21,7 +21,7 @@ main {
           display: inline-block;
           color: $lightGreyBrandColor;
         }
-      }
-    }
+      } // .text
+    } // .disc-container
   } //wrapper
 } //main

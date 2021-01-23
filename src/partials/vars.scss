@@ -4,5 +4,5 @@ $lightBlackBrandColor: #212121;
 $greyBrandColor: #535353;
 $lightGreyBrandColor: #b3b3b3;
 $lateralMargin: 30px;
-$mainMarginBlock: 20px #{calc($lateralMargin / 2)};
-$standardSectionPad: #{calc(100px - #{$marginTB})} 0;
+$mainMarginBlock: 20px calc(#{$lateralMargin} / 2);
+$standardSectionPad: calc(100px - 20px) 0;

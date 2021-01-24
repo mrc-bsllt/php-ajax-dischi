@@ -1,1 +1,78 @@
-*{margin:0;padding:0;box-sizing:border-box;font-family:Roboto,sans-serif}.wrapper{width:50%;margin:auto}a{text-decoration:none}h3{color:#fff}h4{color:#535353;font-weight:400}header{height:70px;background-color:#121212}header .wrapper{height:100%;display:flex;flex-direction:row;justify-content:flex-start;align-items:center;flex-wrap:wrap}header .wrapper a img{width:50px;vertical-align:middle}main{padding:80px 0;background-color:#212121}main .wrapper{display:flex;flex-direction:row;justify-content:flex-start;align-items:stretch;flex-wrap:wrap}main .wrapper .disc-container{width:calc(33.33333% - 30px);margin:20px 15px;padding:20px 20px 50px;background-color:#121212}main .wrapper .disc-container img{width:100%}main .wrapper .disc-container .text{margin-top:10px;text-align:center}main .wrapper .disc-container .text h3{margin-bottom:15px}main .wrapper .disc-container .text span{display:inline-block;color:#b3b3b3}footer{height:50px;background-color:#121212}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  width: 50%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+h4 {
+  color: #535353;
+  font-weight: 400;
+}
+
+header {
+  height: 70px;
+  background-color: #121212;
+}
+header .wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header .wrapper a img {
+  width: 50px;
+  vertical-align: middle;
+}
+
+main {
+  padding: calc(100px - 20px) 0;
+  background-color: #212121;
+}
+main .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+main .wrapper .disc-container {
+  width: calc(100% / 3 - 30px);
+  margin: 20px calc(30px / 2);
+  padding: 20px 20px 50px;
+  background-color: #121212;
+}
+main .wrapper .disc-container img {
+  width: 100%;
+}
+main .wrapper .disc-container .text {
+  margin-top: 10px;
+  text-align: center;
+}
+main .wrapper .disc-container .text h3 {
+  margin-bottom: 15px;
+}
+main .wrapper .disc-container .text span {
+  display: inline-block;
+  color: #b3b3b3;
+}
+
+footer {
+  height: 50px;
+  background-color: #121212;
+}

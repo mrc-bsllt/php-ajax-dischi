@@ -6,55 +6,64 @@
       "title" => "Walls",
       "author" => "Kings Of Leon",
       "cover" => "kol_walls.jpg",
-      "year_pubblication" => 2016
+      "year" => 2016,
+      "genre" => "Rock"
     ],
     [
       "title" => "WOW",
       "author" => "Verdena",
       "cover" => "verdena_wow.jpg",
-      "year_pubblication" => 2011
+      "year" => 2011,
+      "genre" => "Rock"
     ],
     [
       "title" => "Waves Crash, Clouds Roll",
       "author" => "Defeater",
       "cover" => "defeater_wccr.jpg",
-      "year_pubblication" => 2011
+      "year" => 2011,
+      "genre" => "Hardcore"
     ],
     [
       "title" => "Love Let Me Go",
       "author" => "More Than Life",
       "cover" => "mtl_llg.jpg",
-      "year_pubblication" => 2010
+      "year" => 2010,
+      "genre" => "Hardcore"
     ],
     [
       "title" => "Beneath the Skin",
       "author" => "Of Monsters and Men",
       "cover" => "omam_bts.jpg",
-      "year_pubblication" => 2015
+      "year" => 2015,
+      "genre" => "Indie Rock"
     ],
     [
       "title" => "Waking Season",
       "author" => "Caspian",
       "cover" => "caspian_ws.jpg",
-      "year_pubblication" => 2012
+      "year" => 2012,
+      "genre" => "Post Rock"
     ],
     [
       "title" => "Self Portrait",
       "author" => "Loma Prieta",
       "cover" => "loma_sp.jpg",
-      "year_pubblication" => 2015
+      "year" => 2015,
+      "genre" => "Hardcore"
     ],
     [
       "title" => "Open up Your Head",
       "author" => "Sea Girls",
       "cover" => "sg_open.jpg",
-      "year_pubblication" => 2020
+      "year" => 2020,
+      "genre" => "Indie Rock"
     ],
     [
       "title" => "A Sangue Freddo",
       "author" => "Il Teatro degli Orrori",
       "cover" => "itdo_freddo.jpg",
-      "year_pubblication" => 2009
+      "year" => 2009,
+      "genre" => "Rock"
     ],
   ];
 ?>

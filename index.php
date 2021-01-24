@@ -1,6 +1,6 @@
 <?php
   include __DIR__."/vars.php";
-  include __DIR__."/db.php"
+  include __DIR__."/db.php";
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +17,7 @@
   <body>
 
     <!-- header -->
-    <?php include __DIR__."/template/header.php" ?>
+    <?php include __DIR__."/template/header.php"; ?>
     <!-- header -->
 
     <!-- main -->
@@ -34,7 +34,7 @@
               <a href="#">
                 <h4><?= $discContaier["author"]; ?></h4>
               </a>
-              <span><?= $discContaier["year_pubblication"]; ?></span>
+              <span><?= $discContaier["year"]; ?></span>
             </div>
           </div>
 
@@ -44,7 +44,7 @@
     <!-- /main -->
 
     <!-- footer -->
-    <?php include __DIR__."/template/footer.php" ?>
+    <?php include __DIR__."/template/footer.php"; ?>
     <!-- /footer -->
   </body>
 </html>

@@ -1,21 +1,22 @@
-<?php
-  include __DIR__."/vars.php";
-  include __DIR__."/db.php";
-?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <!-- foglio di stile personale -->
     <link rel="stylesheet" href="css/style.css">
-    <title>php ajax dischi</title>
+    <title>Vue-ajax-dischi</title>
   </head>
   <body>
     <div id="app">
 
       <!-- header -->
-      <?php include __DIR__."/template/header.php"; ?>
+      <header>
+        <div class="wrapper">
+          <a href="#">
+            <img src="img/Spotify-icon.png" alt="spotify-icon">
+          </a>
+        </div>
+      </header>
       <!-- header -->
 
       <!-- main -->
@@ -42,10 +43,11 @@
       <!-- /main -->
 
       <!-- footer -->
-      <?php include __DIR__."/template/footer.php"; ?>
+      <footer></footer>
       <!-- /footer -->
 
     </div>
 
+    <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

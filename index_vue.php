@@ -7,7 +7,7 @@
     <title>Vue-ajax-dischi</title>
   </head>
   <body>
-    <div id="app" v-if="discs.length != 0">
+    <div id="app" v-if="discs.length != 0 && genres.length != 0">
 
       <!-- header -->
       <header>

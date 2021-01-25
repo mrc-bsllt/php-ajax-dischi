@@ -1852,18 +1852,28 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   data: {
     // database
     discs: [],
+    genres: [],
     // header
     logo: "spotify-icon.png"
   },
+  // fine data
   methods: {},
+  // fine methods
   mounted: function mounted() {
     var self = this;
     axios.get("http://localhost/php-ajax-dischi/server.php").then(function (response) {
       self.discs = response.data;
-      console.log(self.discs);
+      self.discs.forEach(function (element) {
+        if (!self.genres.includes(element.genre)) {
+          self.genres.push(element.genre);
+        }
+      });
+      console.log(self.genres);
     });
-  }
-});
+  } // fine mounted
+
+} // fine vue
+);
 
 /***/ }),
 

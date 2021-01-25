@@ -15,6 +15,11 @@
           <a href="#">
             <img :src="'img/' + logo" alt="logo-icon">
           </a>
+          <form action="server.php" method="get">
+            <select name="genre">
+              <option v-for="genre in genres" :value="{ genre }">{{ genre }}</option>
+            </select>
+          </form>
         </div>
       </header>
       <!-- header -->

@@ -1862,13 +1862,13 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   mounted: function mounted() {
     var self = this;
     axios.get("http://localhost/php-ajax-dischi/server.php").then(function (response) {
-      self.discs = response.data;
+      self.discs = response.data; // prendo il genere di tutti i dischi, e se non già presente, lo includo nell'array dei generi del data
+
       self.discs.forEach(function (element) {
         if (!self.genres.includes(element.genre)) {
           self.genres.push(element.genre);
         }
       });
-      console.log(self.genres);
     });
   } // fine mounted
 

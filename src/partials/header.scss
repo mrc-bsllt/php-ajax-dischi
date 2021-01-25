@@ -2,8 +2,9 @@ header {
   height: 70px;
   background-color: $blackBrandColor;
   .wrapper {
+    @include flexSet(row, space-between, center);
     height: 100%;
-    @include flexSet(row, flex-start, center);
+    padding: 0 15px;
     a {
       img {
         width: 50px;

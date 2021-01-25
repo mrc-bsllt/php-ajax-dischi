@@ -7,13 +7,13 @@
     <title>Vue-ajax-dischi</title>
   </head>
   <body>
-    <div id="app">
+    <div id="app" v-if="discs.length != 0">
 
       <!-- header -->
       <header>
         <div class="wrapper">
           <a href="#">
-            <img src="img/Spotify-icon.png" alt="spotify-icon">
+            <img :src="'img/' + logo" alt="logo-icon">
           </a>
         </div>
       </header>
@@ -22,22 +22,20 @@
       <!-- main -->
       <main>
         <div class="wrapper">
-          <?php foreach ($database as $discContaier) { ?>
 
-            <div class="disc-container">
-              <img src="img/<?= $discContaier["cover"]; ?>" alt="<?= $discContaier["title"]; ?>">
+            <div class="disc-container" v-for="disc in discs">
+              <img :src="'img/' + disc.cover" :alt="disc.title">
               <div class="text">
                 <a href="#">
-                  <h3><?= $discContaier["title"]; ?></h3>
+                  <h3>{{ disc.title }}</h3>
                 </a>
                 <a href="#">
-                  <h4><?= $discContaier["author"]; ?></h4>
+                  <h4>{{ disc.author }}</h4>
                 </a>
-                <span><?= $discContaier["year"]; ?></span>
+                <span>{{ disc.year }}</span>
               </div>
             </div>
 
-          <?php } ?>
         </div>
       </main>
       <!-- /main -->

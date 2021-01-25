@@ -7,13 +7,6 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- axios -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js" integrity="sha512-otOZr2EcknK9a5aa3BbMR9XOjYKtxxscwyRHN6zmdXuRfJ5uApkHB7cz1laWk2g8RKLzV9qv/fl3RPwfCuoxHQ==" crossorigin="anonymous"></script>
-    <!-- vuejs -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <!-- foglio di stile personale -->
     <link rel="stylesheet" href="css/style.css">
     <title>php ajax dischi</title>

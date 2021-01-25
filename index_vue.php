@@ -15,10 +15,14 @@
           <a href="#">
             <img :src="'img/' + logo" alt="logo-icon">
           </a>
-          <form action="server.php" method="get">
+
+          <form action="index_vue.php" method="get">
             <select name="genre">
-              <option v-for="genre in genres" :value="{ genre }">{{ genre }}</option>
+              <option value="All">All</option>
+              <option v-for="genre in genres" :value="genre">{{ genre }}</option>
             </select>
+
+            <button type="submit" name="button">Cerca</button>
           </form>
         </div>
       </header>

@@ -1,3 +1,4 @@
 <?php
-  $brandIcon = "spotify-icon.png"
+  $brandIcon = "spotify-icon.png";
+  $genreSelected = $_GET["genre"];
 ?>

@@ -23,7 +23,11 @@ var app = new Vue(
       const self = this;
 
       axios
-      .get("http://localhost/php-ajax-dischi/server.php")
+      .get("http://localhost/php-ajax-dischi/server.php", {
+        params: {
+          genre: "fdfsdf"
+        }
+      })
       .then(function(response) {
         self.discs = response.data;
 

@@ -1,6 +1,4 @@
 <?php
-  include __DIR__."/vars.php";
-
   $database = [
       // primo livello (array tradizionale) --> tutti i dischi
       [

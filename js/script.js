@@ -1861,11 +1861,7 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   // fine methods
   mounted: function mounted() {
     var self = this;
-    axios.get("http://localhost/php-ajax-dischi/server.php", {
-      params: {
-        genre: "fdfsdf"
-      }
-    }).then(function (response) {
+    axios.get("server.php").then(function (response) {
       self.discs = response.data; // prendo il genere di tutti i dischi, e se non già presente, lo includo nell'array dei generi del data
 
       self.discs.forEach(function (element) {

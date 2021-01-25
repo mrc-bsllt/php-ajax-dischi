@@ -16,7 +16,7 @@
             <img :src="'img/' + logo" alt="logo-icon">
           </a>
 
-          <form action="index_vue.php" method="get">
+          <form action="server.php" method="get">
             <select name="genre">
               <option value="All">All</option>
               <option v-for="genre in genres" :value="genre">{{ genre }}</option>

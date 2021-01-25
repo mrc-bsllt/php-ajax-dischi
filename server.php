@@ -2,6 +2,14 @@
   include __DIR__."/db.php";
 
   header("Content-type: application/json");
-  echo json_encode($database);
+  if($_GET["genre"] == "All" || $_GET["genre"] == "") {
+    echo json_encode($database);
+
+  } else {
+    $filteredDB = array_filter($database, function($value) {
+      return $value["genre"] == $_GET["genre"];
+    });
+    echo json_encode($filteredDB);
+  }
 
 ?>

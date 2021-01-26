@@ -14,6 +14,7 @@
         return $value["genre"] == $_GET["genre"];
       });
 
+    $filteredDB = array_values($filteredDB);
     echo json_encode($filteredDB);
   }
 

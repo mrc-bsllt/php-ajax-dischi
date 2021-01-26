@@ -43,6 +43,7 @@ header .wrapper a img {
 }
 
 main {
+  min-height: calc(100vh - 70px - 50px);
   padding: calc(100px - 20px) 0;
   background-color: #212121;
 }

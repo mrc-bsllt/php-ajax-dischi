@@ -16,14 +16,14 @@
             <img :src="'img/' + logo" alt="logo-icon">
           </a>
 
-          <!-- <form action="server.php" method="get">
-            <select name="genre">
-              <option value="All">All</option>
-              <option v-for="genre in genres" :value="genre">{{ genre }}</option>
+          <div class="select-genre">
+            <select name="genre" v-model="genre">
+              <option value="">All</option>
+              <option v-for="(genre in genres" :value="genre">{{ genre }}</option>
             </select>
 
-            <button type="submit" name="button">Cerca</button>
-          </form> -->
+            <button type="button" name="button" @click="filter">Cerca</button>
+          </div>
         </div>
       </header>
       <!-- header -->

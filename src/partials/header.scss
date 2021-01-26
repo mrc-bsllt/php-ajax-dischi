@@ -1,5 +1,5 @@
 header {
-  height: 70px;
+  height: $headerHeight;
   background-color: $blackBrandColor;
   .wrapper {
     @include flexSet(row, space-between, center);

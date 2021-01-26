@@ -1853,29 +1853,37 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
     // database
     discs: [],
     genres: [],
+    genre: "",
     // header
     logo: "spotify-icon.png"
   },
   // fine data
-  methods: {},
+  methods: {
+    filter: function filter() {
+      var self = this;
+      var genre = self.genre;
+      axios.get("server.php", {
+        params: {
+          genre: genre
+        }
+      }).then(function (response) {
+        self.discs = response.data;
+        console.log(self.discs);
+      });
+    } // fine funzione
+
+  },
   // fine methods
   mounted: function mounted() {
     var self = this;
-    axios.get("server.php", {
-      params: {
-        genre: "Rock"
-      }
-    }).then(function (response) {
+    axios.get("server.php").then(function (response) {
       self.discs = response.data; // prendo il genere di tutti i dischi, e se non già presente, lo includo nell'array dei generi del data
-      // self.discs.forEach(
-      //   (element) => {
-      //
-      //     if(!self.genres.includes(element.genre)) {
-      //       self.genres.push(element.genre);
-      //     }
-      //
-      //   }
-      // );
+
+      self.discs.forEach(function (element) {
+        if (!self.genres.includes(element.genre)) {
+          self.genres.push(element.genre);
+        }
+      }); // fine forEach
     }); //fine then
   } // fine mounted
 

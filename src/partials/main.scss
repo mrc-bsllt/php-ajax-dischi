@@ -1,4 +1,5 @@
 main {
+  min-height: calc(100vh - #{$headerHeight} - #{$footerHeight});
   padding: $standardSectionPad;
   background-color: $lightBlackBrandColor;
   .wrapper {

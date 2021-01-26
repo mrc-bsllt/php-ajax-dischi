@@ -7,7 +7,7 @@
     <title>Vue-ajax-dischi</title>
   </head>
   <body>
-    <div id="app" v-if="discs.length != 0 && genres.length != 0">
+    <div id="app" v-if="discs.length != 0">
 
       <!-- header -->
       <header>
@@ -16,14 +16,14 @@
             <img :src="'img/' + logo" alt="logo-icon">
           </a>
 
-          <form action="server.php" method="get">
+          <!-- <form action="server.php" method="get">
             <select name="genre">
               <option value="All">All</option>
               <option v-for="genre in genres" :value="genre">{{ genre }}</option>
             </select>
 
             <button type="submit" name="button">Cerca</button>
-          </form>
+          </form> -->
         </div>
       </header>
       <!-- header -->

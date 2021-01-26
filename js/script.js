@@ -1861,15 +1861,22 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0__.default({
   // fine methods
   mounted: function mounted() {
     var self = this;
-    axios.get("server.php").then(function (response) {
+    axios.get("server.php", {
+      params: {
+        genre: "Rock"
+      }
+    }).then(function (response) {
       self.discs = response.data; // prendo il genere di tutti i dischi, e se non già presente, lo includo nell'array dei generi del data
-
-      self.discs.forEach(function (element) {
-        if (!self.genres.includes(element.genre)) {
-          self.genres.push(element.genre);
-        }
-      });
-    });
+      // self.discs.forEach(
+      //   (element) => {
+      //
+      //     if(!self.genres.includes(element.genre)) {
+      //       self.genres.push(element.genre);
+      //     }
+      //
+      //   }
+      // );
+    }); //fine then
   } // fine mounted
 
 } // fine vue
